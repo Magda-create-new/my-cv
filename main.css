@@ -132,7 +132,8 @@ h1 {
     text-align: center;
 }
 p.adventure1 {
-    margin: 0;
+    margin: 1.5px;
+    font-size: 90%
 }
 .skills{
     position: relative;
@@ -149,7 +150,8 @@ p.adventure1 {
     text-align: center;
 }
 .skills-list1 {
-    font-size: 90%;
+    font-size: 85%;
+    margin: 2px;
 }
 .hobby{
     position: relative;
@@ -222,7 +224,7 @@ nav ul li {
 
 nav ul a:link, ul a:visited {
 	text-decoration: none;
-	background-color: #ccc;
+	background-color: #fff;
 	color: #000;
 	border: 1px solid #888;
 	padding: 5px
