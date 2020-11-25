@@ -1,8 +1,34 @@
-.Profil-card {
-  background-color:steelblue;
+
+@media (min-width: 1100px) {
+.main-container {width:1050px;margin:0 auto;}
+}
+@media (max-width: 1100px) and (min-width: 1000px) {
+.main-container  {width:950px;margin:0 auto;}
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+.main-container  {width:750px;margin:0 auto;}
+}
+@media (max-width: 800px) and (min-width: 500px) {
+.main-container {width:450px;margin:0 auto;}
+}
+@media (max-width: 500px) {
+.main-container  {width:300px;margin:0 auto;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
   margin: 10px auto; 
   width: 600px;
   max-width: calc(700vw - 10px);
+  font-family: "Arial",sans-serif;
+}
+.Profil-card {
+  margin: 10px auto; 
+  width: 600px;
+  height: 880px;
   background-color: hsla(0, 0%, 100%, .5);
   border-radius: 8px;
   box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
@@ -15,53 +41,49 @@
 h1 {
     text-align: center;
     padding: 10px;
+    text-shadow: 1px 0.5px 1px grey;
 }
 .section-head {
-     margin: 20px auto;
-     height: 200px;
+    margin: 20px auto;
+    height: 170px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
 }
 .profil-image{
-    height: 120px;
-    width: 120px;
-    background-image: url(assets/IMG_20201122_175405.jpg);
+    height: 145px;
+    width: 125px;
+    background-image: url(assets/IMG_20201122_175405-removebg-preview.png);
     background-size: cover;
     padding: 1px;
     background-color: #666;
-    filter: grayscale(50%);
+    filter: grayscale(80%);
     transition: all 0.5s ease-in-out;
 }
-
 .profil-image:hover {
   filter: grayscale(20%);
   transform: scale(1.1);
 }
 .about-me {
     height: 170px;
-    width: 270px;
+    width: 280px;
     position: relative;
     padding: 10px;
     text-align: center;
-}
-.about-me:hover {
-  transform: scale(1.1);
 }
 .quotation {
     font-size: 70%
 }
 .expirience {
-    height: 110px;
-    width: 110px;
+    height: 150px;
+    width: 150px;
     position: relative;
-    background-image: url(assets/10%20years%205.PNG);
+    background-image: url(assets/DQRv1ijWAAEQBVO.jpg);
     background-size: cover;
 }
 .icons-head{
     width: auto;
-    height: 100px;
-    background-color: aqua;
+    height: 30px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -69,17 +91,26 @@ h1 {
 .contact-icons{
     position: relative;
     width: 200px;
-    height: 50px;  
+    height: 30px;  
+}
+.contact-icons:hover {
+  transform: scale(1.1);
+}
+.social{
+  list-style-type: none;
+}
+.social {
+  display: inline;
 }
 .body-section{
-    width: 600px;
-    height: 300px;
-    background-color: burlywood;
+  margin: 20px auto;
+  background-color: #fff;
+  height: 400px;
+  
 }
 .work_and_skills{ 
-    background-color: aquamarine;
-    width: 600px;
-    height: 60px;
+    background-color: #fff;
+    height: 250px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -87,80 +118,117 @@ h1 {
 .work{
     position: relative;
     width: 300px;
-    height: 60px;
-    background-color: red;
-    margin-top: 20px;
+    height: 250px;
+    background-color: #fff;
     padding: 10px;
+    font-size: 90%;
+    margin: 2px;
+}
+.adventure{
+    font-size: 110%;
+    font-weight: 600;
+    text-shadow: 1px 0.5px 1px grey;
+    margin: 0;
+    text-align: center;
+}
+p.adventure1 {
+    margin: 0;
 }
 .skills{
     position: relative;
     width: 300px;
-    height: 60px;
-    position: relative;
-    background-color: greenyellow;
-    margin-top: 20px;
+    height: 250px;
+    background-color: #fff;
     padding: 10px;
+}
+.skills-list{
+    font-size: 110%;
+    font-weight: 600;
+    text-shadow: 1px 0.5px 1px grey;
+    margin: 0;
+    text-align: center;
+}
+.skills-list1 {
+    font-size: 90%;
 }
 .hobby{
     position: relative;
-    width: 60px;
-    height: 60px;
-    background-color:darkorange;
-    margin-top: 20px;
-    top: 20px;
-    left: 250px;
+    height: 100px;
+    background-color:#fff;
+    width: 50%;
+    margin: 0 auto;
     padding: 10px;
 }
-nav  {
-    background-color: aqua;
+.hobby-list{
+    font-size: 110%;
+    font-weight: 600;
+    text-shadow: 1px 0.5px 1px grey;
+    margin: 0;
+    text-align: center;
+}
+.hobby-icons{
+    text-align: center;
+    font-size: 90%;
+    
+}
+.footer-image{
+    position: relative;
+    height: 110px;
+    background-color:#fff;
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    background-image: url(assets/lets%20talk%203.png);
+    background-size: cover
+}
+    
+.nav  {
+    background-color: none;
 }
 .head{ 
-background-color: green;
+background-color: #fff;
 }
 .profil-image{
-    background-color: brown;
+    background-color: #fff;
 }
 .about-me{
-    background-color: yellow;
+    background-color: #fff;
 }
 .expirience{
-    background-color: yellowgreen;
+    background-color: #fff;
 }
 .contact-icons{
-    background-color: lightyellow;
+    background-color: #fff;
 }
 
-ul, ul li {
+nav ul, ul li {
 	display: block;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-ul {
+nav ul {
+	text-align: center;
 	border-bottom: 1px solid #888;
-	float: left;
-	width: 100%;
-	padding-left: 20px;
+	padding-bottom: 5px;
 }
 
-ul li {
-	float: left;
-	margin-right: 10px;
+nav ul li {
+	display: inline;
+	white-space: nowrap;
+	margin-right: 5px;
 }
 
-ul a:link, ul a:visited {
+nav ul a:link, ul a:visited {
 	text-decoration: none;
-	display: block;
 	background-color: #ccc;
 	color: #000;
-	padding: 5px 10px;
 	border: 1px solid #888;
-	position: relative;
-	top: 1px;
+	padding: 5px
 }
 
-ul a:hover {
+nav ul a:hover {
 	background-color: #fff;
 	border-bottom-color: #fff;
 }
